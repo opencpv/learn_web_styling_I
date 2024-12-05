@@ -43,17 +43,6 @@ Header Component
 - Bottom border for separation
 =============================== */
 .header {
-  /* Full width of parent */
-  width: 100%;
-  /* Fixed height for consistent header size */
-  height: 80px;
-  /* Internal spacing */
-  padding: 20px;
-  /* Space between header and content */
-  margin-bottom: 20px;
-  /* Visual separator */
-  border-bottom: 1px solid #e0e0e0;
-  background-color: #f8f9fa;
 }
 
 /* Logo Box
@@ -61,18 +50,6 @@ Header Component
 - Floated left
 - Visual container */
 .logo {
-  /* Fixed dimensions for logo area */
-  width: 200px;
-  height: 40px;
-  /* Internal spacing for logo content */
-  padding: 8px;
-  /* Space between logo and navigation */
-  margin-right: 20px;
-  /* Visual container */
-  border: 1px solid #ddd;
-  background-color: #fff;
-  /* Float left for horizontal alignment */
-  float: left;
 }
 
 /* Navigation Buttons
@@ -81,17 +58,6 @@ Header Component
 - Visual styling */
 .nav-button {
   /* Fixed dimensions for consistent button size */
-  width: 100px;
-  height: 40px;
-  /* Space for button text */
-  padding: 8px;
-  /* Space between buttons */
-  margin-right: 10px;
-  /* Visual definition */
-  border: 1px solid #007bff;
-  background-color: #fff;
-  /* Float for horizontal alignment */
-  float: left;
 }
 
 /* Clear Float Helper
@@ -108,12 +74,6 @@ Main Content Container
 - Bottom margin for spacing
 =============================== */
 .main-container {
-  width: 100%;
-  /* Internal spacing for content */
-  padding: 20px;
-  /* Space between sections */
-  margin-bottom: 40px;
-  background-color: #fff;
 }
 
 /* ===============================
@@ -124,17 +84,6 @@ Card Components
 =============================== */
 .card {
   /* Fixed card dimensions */
-  width: 300px;
-  height: 200px;
-  /* Internal content spacing */
-  padding: 20px;
-  /* Space between cards */
-  margin: 20px;
-  /* Visual container */
-  border: 1px solid #e0e0e0;
-  background-color: #fff;
-  /* Float for horizontal layout */
-  float: left;
 }
 
 /* ===============================
@@ -144,14 +93,6 @@ Form Container
 - Visual container
 =============================== */
 .form-container {
-  width: 100%;
-  max-width: 600px;
-  /* Internal form spacing */
-  padding: 20px;
-  /* Center the form */
-  margin: 20px auto;
-  /* Visual container */
-  border: 1px solid #e0e0e0;
 }
 
 /* Form Input Fields
@@ -159,27 +100,12 @@ Form Container
 - Consistent height
 - Proper spacing */
 .input-field {
-  /* Take full width of container */
-  width: 100%;
-  height: 40px;
-  /* Space for text input */
-  padding: 8px;
-  /* Space between fields */
-  margin-bottom: 16px;
-  /* Visual definition */
-  border: 1px solid #ddd;
 }
 
 /* Textarea Field
 - Similar to input but taller
 - Maintains consistent styling */
 .textarea-field {
-  width: 100%;
-  /* Taller than regular inputs */
-  height: 120px;
-  padding: 8px;
-  margin-bottom: 16px;
-  border: 1px solid #ddd;
 }
 
 /* Submit Button
@@ -187,15 +113,6 @@ Form Container
 - Proper spacing
 - Visual emphasis */
 .submit-button {
-  width: 200px;
-  height: 40px;
-  padding: 8px;
-  /* Space around button */
-  margin: 20px 0;
-  /* Visual styling */
-  border: 1px solid #007bff;
-  background-color: #007bff;
-  color: white;
 }
 
 /* ===============================
@@ -205,10 +122,6 @@ Content Sections
 - Visual separation
 =============================== */
 .section {
-  width: 100%;
-  padding: 20px;
-  margin-bottom: 40px;
-  border: 1px solid #e0e0e0;
 }
 
 /* Section Titles
@@ -216,11 +129,6 @@ Content Sections
 - Bottom border for emphasis
 - Proper spacing */
 .section-title {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  /* Visual separator */
-  border-bottom: 2px solid #007bff;
 }
 
 /* ===============================
@@ -235,5 +143,4 @@ Helper Classes
 - Adds borders to all elements
 - Useful for visualization */
 .debug * {
-  border: 1px solid red;
 }
