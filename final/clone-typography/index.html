@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tailwind Typography</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <p
+        class="font-custom text-[57px] font-normal leading-normal text-[rgb(0,0,0.87)] text-center"
+      >
+        Whereas disregard and contempt for human rights have resulted
+      </p>
+    </main>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              custom: ["Hubot Sans", "sans-serif"], // For hosted fonts
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin-top: 80px; /* Space for fixed header */
+  font-family: Arial;
+}
+
+/* Fixed Header */
+.header {
+  /* Fixed at top of viewport */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: white;
+  border-bottom: 2px solid black;
+}
+
+/* Header Content */
+.header-content {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Main Content Container */
+.main-content {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Static Position Example */
+.static-box {
+  position: static;
+  width: 800px;
+  height: 100px;
+  margin: 20px auto;
+  border: 2px solid black;
+}
+
+/* Relative Position Example */
+.relative-container {
+  width: 800px;
+  height: 200px;
+  margin: 20px auto;
+  border: 2px dashed blue;
+}
+
+.relative-box {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  top: 20px;
+  left: 20px;
+  border: 2px solid red;
+}
+
+/* Absolute Position Example */
+.absolute-container {
+  position: relative;
+  width: 800px;
+  height: 200px;
+  margin: 20px auto;
+  border: 2px dashed green;
+}
+
+.absolute-box {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  top: 40px;
+  right: 40px;
+  border: 2px solid purple;
+}
+
+/* Fixed Position Example */
+.fixed-box {
+  position: fixed;
+  width: 200px;
+  height: 100px;
+  bottom: 20px;
+  right: 20px;
+  border: 2px solid orange;
+  background: white;
+}
+
+/* Fixed Side Navigation */
+.side-nav {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 150px;
+  border: 2px solid blue;
+  background: white;
+}
+
+/* Text styles */
+h1 {
+  margin: 10px 0;
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+p {
+  margin: 10px;
+}
+
+/* Section spacing */
+.section {
+  margin-bottom: 40px;
+}

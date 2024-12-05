@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Layout Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-gray-100">
+    <!-- Sticky Header - Position Utility -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+      <nav class="container mx-auto px-4">
+        <!-- Flex for navigation -->
+        <div class="flex items-center justify-between h-16">
+          <div class="text-xl font-bold text-blue-600">Logo</div>
+          <!-- Navigation links with flex -->
+          <div class="flex space-x-4">
+            <a href="#" class="px-3 py-2 text-gray-700 hover:text-blue-600"
+              >Home</a
+            >
+            <a href="#" class="px-3 py-2 text-gray-700 hover:text-blue-600"
+              >About</a
+            >
+            <a href="#" class="px-3 py-2 text-gray-700 hover:text-blue-600"
+              >Services</a
+            >
+            <a href="#" class="px-3 py-2 text-gray-700 hover:text-blue-600"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+      <!-- Hero Section with Position -->
+      <section class="relative h-96 mb-12 overflow-hidden rounded-xl">
+        <img
+          src="https://picsum.photos/1200/400"
+          alt="Hero image"
+          class="absolute inset-0 w-full h-full object-cover"
+        />
+        <!-- Overlay with absolute positioning -->
+        <div class="absolute inset-0 bg-black bg-opacity-50">
+          <!-- Flex for centering content -->
+          <div class="flex items-center justify-center h-full">
+            <div class="text-center text-white">
+              <h1 class="text-4xl font-bold mb-4">Welcome to Our Site</h1>
+              <p class="text-xl">Discover amazing content</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Grid Section -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold mb-6">Our Features</h2>
+        <!-- Grid layout for features -->
+        <div class="grid grid-cols-3 gap-6">
+          <!-- Feature Cards -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex flex-col h-full">
+              <h3 class="text-xl font-semibold mb-2">Feature 1</h3>
+              <p class="text-gray-600 flex-grow">
+                Description of feature 1 goes here.
+              </p>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex flex-col h-full">
+              <h3 class="text-xl font-semibold mb-2">Feature 2</h3>
+              <p class="text-gray-600 flex-grow">
+                Description of feature 2 goes here.
+              </p>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex flex-col h-full">
+              <h3 class="text-xl font-semibold mb-2">Feature 3</h3>
+              <p class="text-gray-600 flex-grow">
+                Description of feature 3 goes here.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content Section with Grid and Flex -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold mb-6">Content Section</h2>
+        <!-- Grid for layout -->
+        <div class="grid grid-cols-12 gap-6">
+          <!-- Main content area -->
+          <div class="col-span-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <!-- Flex for content organization -->
+              <div class="flex flex-col space-y-4">
+                <h3 class="text-xl font-semibold">Main Content</h3>
+                <p class="text-gray-600">Main content goes here.</p>
+                <!-- Flex for buttons -->
+                <div class="flex space-x-4">
+                  <button
+                    class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                  >
+                    Action 1
+                  </button>
+                  <button
+                    class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600"
+                  >
+                    Action 2
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Sidebar -->
+          <div class="col-span-4">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <!-- Flex for sidebar content -->
+              <div class="flex flex-col space-y-4">
+                <h3 class="text-xl font-semibold">Sidebar</h3>
+                <div class="flex items-center space-x-2">
+                  <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                  <span>Sidebar item 1</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                  <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                  <span>Sidebar item 2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card Grid Section -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold mb-6">Card Grid</h2>
+        <!-- Grid for cards -->
+        <div class="grid grid-cols-4 gap-4">
+          <!-- Cards with flex for internal layout -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="https://picsum.photos/300/200"
+              alt="Card image"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <div class="flex flex-col space-y-2">
+                <h3 class="font-semibold">Card Title</h3>
+                <p class="text-sm text-gray-600">Card description here.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat cards -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="https://picsum.photos/300/201"
+              alt="Card image"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <div class="flex flex-col space-y-2">
+                <h3 class="font-semibold">Card Title</h3>
+                <p class="text-sm text-gray-600">Card description here.</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="https://picsum.photos/300/202"
+              alt="Card image"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <div class="flex flex-col space-y-2">
+                <h3 class="font-semibold">Card Title</h3>
+                <p class="text-sm text-gray-600">Card description here.</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="https://picsum.photos/300/203"
+              alt="Card image"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <div class="flex flex-col space-y-2">
+                <h3 class="font-semibold">Card Title</h3>
+                <p class="text-sm text-gray-600">Card description here.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer with Flex -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-4">
+        <!-- Flex for footer layout -->
+        <div class="flex justify-between">
+          <div>
+            <h3 class="text-lg font-semibold mb-4">About Us</h3>
+            <p class="text-gray-400">Footer content goes here.</p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+            <!-- Flex for footer links -->
+            <div class="flex flex-col space-y-2">
+              <a href="#" class="text-gray-400 hover:text-white">Link 1</a>
+              <a href="#" class="text-gray-400 hover:text-white">Link 2</a>
+              <a href="#" class="text-gray-400 hover:text-white">Link 3</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  background: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.section {
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+/* Button Base Style */
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  background: #2d9cdb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  min-width: 150px;
+}
+
+/* 1. BOUNCE ANIMATIONS */
+@keyframes bounceVertical {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes bounceSquash {
+  0%,
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.1, 0.9);
+  }
+  75% {
+    transform: translateY(0) scale(0.95, 1.05);
+  }
+}
+
+.bounce-vertical {
+  animation: bounceVertical 1.5s ease infinite;
+}
+
+.bounce-squash {
+  animation: bounceSquash 2s ease infinite;
+}
+
+/* 2. ROCK ANIMATIONS */
+@keyframes rockGentle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes rockWave {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(12deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-12deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.rock-gentle {
+  animation: rockGentle 2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.rock-wave {
+  animation: rockWave 3s ease infinite;
+  transform-origin: center;
+}
+
+/* 3. PULSE ANIMATIONS */
+@keyframes pulseScale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(45, 156, 219, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(45, 156, 219, 0.6);
+  }
+}
+
+.pulse-scale {
+  animation: pulseScale 2s ease infinite;
+}
+
+.pulse-glow {
+  animation: pulseGlow 2s ease infinite;
+}
+
+/* 4. ROTATION ANIMATIONS */
+@keyframes rotateCW {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateSwing {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  75% {
+    transform: rotate(-30deg);
+  }
+}
+
+.rotate-spin {
+  animation: rotateCW 3s linear infinite;
+}
+
+.rotate-swing {
+  animation: rotateSwing 2s ease infinite;
+  transform-origin: center;
+}
+
+/* Animation Labels */
+.label {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}

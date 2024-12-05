@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Grid Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+      <!-- Header Section: 12-column grid -->
+      <header
+        class="grid grid-cols-12 gap-4 bg-white rounded-lg shadow-md p-4 mb-8"
+      >
+        <!-- Logo takes 3 columns -->
+        <div class="col-span-3">
+          <div class="text-2xl font-bold text-blue-600">GridDemo</div>
+        </div>
+        <!-- Navigation takes 9 columns -->
+        <nav class="col-span-9">
+          <ul class="grid grid-cols-4 gap-4 h-full items-center">
+            <li>
+              <a href="#" class="text-gray-600 hover:text-blue-500">Home</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-600 hover:text-blue-500">About</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-600 hover:text-blue-500">Services</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-600 hover:text-blue-500">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Hero Section: Grid with auto rows -->
+      <section
+        class="grid grid-cols-2 gap-8 bg-white rounded-lg shadow-md p-8 mb-8"
+      >
+        <!-- Content Area -->
+        <div class="grid gap-4 content-center">
+          <h1 class="text-4xl font-bold text-gray-800">Grid Layout System</h1>
+          <p class="text-gray-600">
+            Demonstrating Tailwind's powerful grid utilities.
+          </p>
+          <div class="grid grid-cols-2 gap-4">
+            <button class="bg-blue-500 text-white p-2 rounded-lg">
+              Get Started
+            </button>
+            <button class="border border-blue-500 text-blue-500 p-2 rounded-lg">
+              Learn More
+            </button>
+          </div>
+        </div>
+        <!-- Image Area -->
+        <div class="grid place-items-center">
+          <img
+            src="https://picsum.photos/500/300"
+            alt="Hero image"
+            class="rounded-lg"
+          />
+        </div>
+      </section>
+
+      <!-- Features Section: 3-column grid -->
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold mb-6">Features</h2>
+        <div class="grid grid-cols-3 gap-6">
+          <!-- Feature Cards -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="grid gap-4">
+              <div
+                class="w-12 h-12 bg-blue-100 rounded-lg grid place-items-center"
+              >
+                <div class="w-6 h-6 bg-blue-500 rounded"></div>
+              </div>
+              <h3 class="text-xl font-semibold">Feature 1</h3>
+              <p class="text-gray-600">Description of feature 1 goes here.</p>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="grid gap-4">
+              <div
+                class="w-12 h-12 bg-green-100 rounded-lg grid place-items-center"
+              >
+                <div class="w-6 h-6 bg-green-500 rounded"></div>
+              </div>
+              <h3 class="text-xl font-semibold">Feature 2</h3>
+              <p class="text-gray-600">Description of feature 2 goes here.</p>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="grid gap-4">
+              <div
+                class="w-12 h-12 bg-purple-100 rounded-lg grid place-items-center"
+              >
+                <div class="w-6 h-6 bg-purple-500 rounded"></div>
+              </div>
+              <h3 class="text-xl font-semibold">Feature 3</h3>
+              <p class="text-gray-600">Description of feature 3 goes here.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Grid: Auto-fit with minmax -->
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold mb-6">Gallery</h2>
+        <div class="grid grid-cols-4 gap-4">
+          <!-- Gallery Items -->
+          <div
+            class="aspect-square bg-white rounded-lg shadow-md overflow-hidden"
+          >
+            <img
+              src="https://picsum.photos/300/300?1"
+              alt="Gallery 1"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="aspect-square bg-white rounded-lg shadow-md overflow-hidden"
+          >
+            <img
+              src="https://picsum.photos/300/300?2"
+              alt="Gallery 2"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="aspect-square bg-white rounded-lg shadow-md overflow-hidden"
+          >
+            <img
+              src="https://picsum.photos/300/300?3"
+              alt="Gallery 3"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="aspect-square bg-white rounded-lg shadow-md overflow-hidden"
+          >
+            <img
+              src="https://picsum.photos/300/300?4"
+              alt="Gallery 4"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Content Grid: 12-column with sidebar -->
+      <section class="grid grid-cols-12 gap-8 mb-8">
+        <!-- Main Content: 8 columns -->
+        <main class="col-span-8 bg-white rounded-lg shadow-md p-6">
+          <div class="grid gap-6">
+            <h2 class="text-2xl font-bold">Main Content</h2>
+            <!-- Content Grid -->
+            <div class="grid grid-cols-2 gap-4">
+              <div class="p-4 bg-gray-50 rounded-lg">
+                <h3 class="font-semibold mb-2">Article 1</h3>
+                <p class="text-gray-600">Content for article 1.</p>
+              </div>
+              <div class="p-4 bg-gray-50 rounded-lg">
+                <h3 class="font-semibold mb-2">Article 2</h3>
+                <p class="text-gray-600">Content for article 2.</p>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <!-- Sidebar: 4 columns -->
+        <aside class="col-span-4 bg-white rounded-lg shadow-md p-6">
+          <div class="grid gap-4">
+            <h3 class="text-xl font-bold">Sidebar</h3>
+            <div class="grid gap-2">
+              <div class="p-3 bg-gray-50 rounded-lg">Sidebar Item 1</div>
+              <div class="p-3 bg-gray-50 rounded-lg">Sidebar Item 2</div>
+              <div class="p-3 bg-gray-50 rounded-lg">Sidebar Item 3</div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Stats Grid: Equal columns -->
+      <section class="bg-blue-500 rounded-lg shadow-md p-8">
+        <div class="grid grid-cols-4 gap-8 text-white">
+          <div class="grid gap-2 text-center">
+            <span class="text-3xl font-bold">100+</span>
+            <span>Clients</span>
+          </div>
+          <div class="grid gap-2 text-center">
+            <span class="text-3xl font-bold">50+</span>
+            <span>Projects</span>
+          </div>
+          <div class="grid gap-2 text-center">
+            <span class="text-3xl font-bold">10+</span>
+            <span>Awards</span>
+          </div>
+          <div class="grid gap-2 text-center">
+            <span class="text-3xl font-bold">5+</span>
+            <span>Years</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer Grid -->
+    <footer class="bg-gray-800 text-white mt-12">
+      <div class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-4 gap-8">
+          <!-- Company Info -->
+          <div class="col-span-2 grid gap-4">
+            <h3 class="text-lg font-semibold">About Us</h3>
+            <p class="text-gray-400">Company description goes here.</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="grid gap-2">
+            <h4 class="text-lg font-semibold">Resources</h4>
+            <div class="grid gap-2">
+              <a href="#" class="text-gray-400 hover:text-white"
+                >Documentation</a
+              >
+              <a href="#" class="text-gray-400 hover:text-white">Tutorials</a>
+              <a href="#" class="text-gray-400 hover:text-white">Blog</a>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="grid gap-2">
+            <h4 class="text-lg font-semibold">Connect</h4>
+            <div class="grid gap-2">
+              <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
+              <a href="#" class="text-gray-400 hover:text-white">GitHub</a>
+              <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flexbox Layout Tutorial</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>Flexbox Layout Tutorial</h1>
+
+    <!-- EXAMPLE 1: Basic Row Layout -->
+    <h2>1. Basic Row Layout (display: flex)</h2>
+    <p class="description">Items arranged in a row (default flex behavior)</p>
+    <div class="flex-row">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Item 2</div>
+      <div class="flex-item">Item 3</div>
+    </div>
+
+    <!-- EXAMPLE 2: Column Layout -->
+    <h2>2. Column Layout (flex-direction: column)</h2>
+    <p class="description">Items stacked in a column</p>
+    <div class="flex-column">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Item 2</div>
+      <div class="flex-item">Item 3</div>
+    </div>
+
+    <!-- EXAMPLE 3: Space Between -->
+    <h2>3. Space Between (justify-content: space-between)</h2>
+    <p class="description">Items spread across container with equal spacing</p>
+    <div class="space-between">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Item 2</div>
+      <div class="flex-item">Item 3</div>
+    </div>
+
+    <!-- EXAMPLE 4: Centered Items -->
+    <h2>4. Centered Items (justify-content: center, align-items: center)</h2>
+    <p class="description">Items centered both horizontally and vertically</p>
+    <div class="center-items">
+      <div class="flex-item">Centered Item</div>
+    </div>
+
+    <!-- EXAMPLE 5: Flexible Widths -->
+    <h2>5. Flexible Widths (flex: 1, flex: 2)</h2>
+    <p class="description">Items with different flex-grow values</p>
+    <div class="flex-sizes">
+      <div class="flex-grow-1">Flex: 1</div>
+      <div class="flex-grow-2">Flex: 2</div>
+      <div class="flex-grow-1">Flex: 1</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Examples</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-gray-100">
+    <!-- Sticky Header Example -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+      <nav class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+          <span class="text-xl font-bold">Position Demo</span>
+          <div class="relative">
+            <!-- Dropdown container -->
+            <button class="px-4 py-2 bg-blue-500 text-white rounded-lg">
+              Menu
+            </button>
+            <!-- Absolute positioned dropdown -->
+            <div
+              class="absolute right-0 top-full mt-2 w-48 bg-white rounded-lg shadow-lg hidden group-hover:block"
+            >
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Item 1</a>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Item 2</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+      <!-- Fixed Chat Button -->
+      <div class="fixed bottom-6 right-6 z-40">
+        <button
+          class="bg-blue-500 text-white p-4 rounded-full shadow-lg hover:bg-blue-600 transition-colors"
+        >
+          Chat
+        </button>
+      </div>
+
+      <!-- Card with Multiple Position Elements -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold mb-6">Card Examples</h2>
+        <div class="grid grid-cols-3 gap-6">
+          <!-- Card with Badge -->
+          <div class="relative bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="https://picsum.photos/400/300"
+              alt="Card image"
+              class="w-full h-48 object-cover"
+            />
+            <!-- Absolute positioned badge -->
+            <div
+              class="absolute top-4 right-4 px-3 py-1 bg-red-500 text-white rounded-full"
+            >
+              New
+            </div>
+            <!-- Absolute positioned price tag -->
+            <div
+              class="absolute bottom-4 left-4 px-3 py-1 bg-black bg-opacity-50 text-white rounded-lg"
+            >
+              $99
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold">Card Title</h3>
+            </div>
+          </div>
+
+          <!-- Card with Overlay -->
+          <div
+            class="relative bg-white rounded-lg shadow-md overflow-hidden group"
+          >
+            <img
+              src="https://picsum.photos/400/301"
+              alt="Card image"
+              class="w-full h-48 object-cover"
+            />
+            <!-- Full overlay on hover -->
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <button class="px-4 py-2 bg-white text-black rounded-lg">
+                View Details
+              </button>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold">Hover Overlay</h3>
+            </div>
+          </div>
+
+          <!-- Card with Corner Decorations -->
+          <div class="relative bg-white rounded-lg shadow-md overflow-hidden">
+            <!-- Corner decorations -->
+            <div
+              class="absolute top-0 left-0 w-16 h-16 bg-blue-500 transform -rotate-45 -translate-x-8 -translate-y-8"
+            ></div>
+            <div class="absolute top-2 left-2 text-white z-10">
+              <span class="text-sm">Featured</span>
+            </div>
+            <img
+              src="https://picsum.photos/400/302"
+              alt="Card image"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold">Corner Design</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Progress Bar Example -->
+      <section class="mb-12">
+        <div class="relative h-2 bg-gray-200 rounded">
+          <!-- Progress bar with absolute positioning -->
+          <div
+            class="absolute left-0 top-0 h-full w-3/4 bg-blue-500 rounded"
+          ></div>
+          <!-- Progress indicator -->
+          <div
+            class="absolute right-0 top-0 transform translate-x-1/2 -translate-y-1/2"
+          >
+            <div class="bg-white border-2 border-blue-500 rounded-full p-1">
+              <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Fixed Footer -->
+    <footer class="fixed bottom-0 inset-x-0 bg-white shadow-lg z-30">
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+          <span>© 2024 Position Demo</span>
+          <!-- Social icons -->
+          <div class="flex space-x-4">
+            <a href="#" class="relative group">
+              <span class="w-8 h-8 bg-blue-500 rounded-full"></span>
+              <!-- Hover tooltip -->
+              <span
+                class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-black text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity"
+              >
+                Follow us
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

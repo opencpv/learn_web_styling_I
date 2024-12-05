@@ -1,0 +1,80 @@
+/* Remove default browser margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Main page container - centered with fixed width */
+body {
+  width: 800px;
+  margin: 0 auto;
+  font-family: Arial;
+}
+
+/* HEADER STYLES */
+
+/* Header container - full width with bottom border */
+.header {
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+/* Logo box - floated left with fixed size */
+.logo {
+  width: 200px;
+  height: 50px;
+  margin: 10px;
+  float: left;
+  border: 1px solid black;
+}
+
+/* Navigation container - floated left */
+.nav {
+  float: left;
+  margin: 10px;
+}
+
+/* Navigation items - float left to create horizontal menu */
+.nav-item {
+  float: left;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+/* Clear floats - used after floated elements */
+.clear {
+  clear: both;
+}
+
+/* CARDS STYLES */
+
+/* Cards container - full width with border */
+.cards {
+  width: 100%;
+  margin: 20px 0;
+  border: 1px solid black;
+}
+
+/* Individual card - floated left with fixed size */
+.card {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  padding: 10px;
+  float: left;
+  border: 1px solid black;
+}
+
+/* TEXT STYLES */
+
+/* Heading margins */
+h1 {
+  margin: 10px;
+}
+
+/* Paragraph margins */
+p {
+  margin: 10px 0;
+}
